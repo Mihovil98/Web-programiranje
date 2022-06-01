@@ -158,14 +158,14 @@ nav li a:hover {
 .bar {
     height: 20px;
     width: 815px;
-    border-right: solid #BBB;
+    border-right: solid #BBBBBB;
     border-width: 5px;
 }
 
 .fadeIn {
     animation: fadeIn 20s linear 1;
     height: 20px;
-    background-color: #BBB;
+    background-color: #BBBBBB;
     margin-top: 100px;
 }
 
