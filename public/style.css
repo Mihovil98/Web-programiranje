@@ -1,0 +1,190 @@
+.color {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 5px;
+    transition: transform 300ms;
+}
+
+.color:hover {
+    transform: scale(0.9);
+}
+
+.colorText {
+    font-weight: bold;
+    margin: 74.5px 0px 74.5px 0px;
+    font-size: 50px;
+    display: none;
+}
+
+.purple {
+    background-color: #7F58AF;
+}
+
+.blue {
+    background-color: #64C5EB;
+}
+
+.pink {
+    background-color: #E84D8A;
+}
+
+.orange {
+    background-color: #FEB326;
+}
+
+.green {
+    background-color: #6D8B74;
+}
+
+#info {
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#correct,
+#incorrect {
+    pointer-events: none;
+    position: absolute;
+    width: 5%;
+    opacity: 0;
+}
+
+.fadeAway {
+    animation-name: fadeAway;
+    animation-duration: 1000ms;
+}
+
+.fadeInfo {
+    animation-name: fadeAway;
+    animation-duration: 3000ms;
+}
+
+@keyframes fadeAway {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+body {
+    background-color: #f7f6f4;
+}
+
+#header {
+    border-bottom: solid #BBBBBB;
+    border-width: 1px;
+}
+
+#footer {
+    background-color: #333333;
+    color: #f7f6f4;
+    font-weight: bold;
+}
+
+nav {
+    color: #333333;
+    font-weight: bold;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    /* inside nav grabs one element and another element and put them both on different corners */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    /* all children (<li></li>) will have exact same space around them */
+    align-items: center;
+    /* align children vertically */
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+#play {
+    color: #333333;
+    margin: 100px 0px 100px 0px;
+    font-weight: bold;
+}
+
+#play:hover {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+#score {
+    color: #333333;
+    margin: 100px 50px 100px 50px;
+    font-weight: bold;
+    display: none;
+}
+
+.option {
+    color: #333333;
+    margin: 100px 50px 100px 50px;
+    font-weight: bold;
+    display: none;
+}
+
+.option:hover {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.bar {
+    height: 20px;
+    width: 815px;
+    border-right: solid #BBB;
+    border-width: 5px;
+}
+
+.fadeIn {
+    animation: fadeIn 20s linear 1;
+    height: 20px;
+    background-color: #BBB;
+    margin-top: 100px;
+}
+
+@keyframes fadeIn {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.avatar-ctn {
+    background-color: #333333;
+    text-align: center;
+}
+
+.avatar {
+    width: 65%;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}

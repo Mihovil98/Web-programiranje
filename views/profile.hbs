@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>FERIT 2022</title>
+</head>
+
+<body>
+
+    <div class="container-fluid" id="header">
+        <nav>
+            <h4>COLOR GAME</h4>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/game">GAME</a></li>
+                <li><a href="/profile">PROFILE</a></li>
+                <li><a href="/highscore">HIGHSCORE</a></li>
+                <li><a href="/auth/logout">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="avatar-ctn">
+                        <img src="/avatar.png" class="avatar" alt="User profile picture" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{user.name}}</h5>
+                        <p class="card-text">{{user.email}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Profile Page
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hey {{user.name}}, welcome back!</h5>
+                        <p class="card-text">These are your personal best scores. To check out how you compare to
+                            others, navigate to highscore page.</p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>{{results0.date}}</td>
+                                    <td>{{results0.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>{{results1.date}}</td>
+                                    <td>{{results1.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>{{results2.date}}</td>
+                                    <td>{{results2.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>{{results3.date}}</td>
+                                    <td>{{results3.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>{{results4.date}}</td>
+                                    <td>{{results4.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>{{results5.date}}</td>
+                                    <td>{{results5.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>{{results6.date}}</td>
+                                    <td>{{results6.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>{{results7.date}}</td>
+                                    <td>{{results7.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>{{results8.date}}</td>
+                                    <td>{{results8.score}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>{{results9.date}}</td>
+                                    <td>{{results9.score}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        Personal Highscore
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 text-center fixed-bottom" id="footer">
+        FERIT 2022
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
